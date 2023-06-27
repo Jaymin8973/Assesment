@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .head {
+            background-color: aqua;
+            padding: 10px;
+        }
+        .one-1{
+            background-color: red;
+        }
+        .one-1 ul{
+            list-style-type: none;
+        }
+        .three{
+            background-color: teal;
+        }
+        [class*="one-"]{
+            float: left;
+        }
+        /* for mobile */
+        [class*="one-"]
+        {
+            width: 100%;
+        }
+        /* for tab */
+        @media screen and (min-width:600px) {
+            .one-1{
+                width: 50%;
+            }
+            .one-2{
+                width: 50%;
+            }
+            .three{
+                width: 100%;
+            }
+        }
+        /* for pc */
+        @media screen and (min-width:768px) {
+            .one-1{
+                width: 25%;
+            }
+            .one-2{
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <h1>kjhgf</h1>
+    </div>
+    <div class="two">
+        <div class="one-1">
+            <ul>
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+            </ul>
+        </div>
+        <div class="one-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ab, culpa sunt unde quasi accusamus facilis nam fugit amet repellat enim soluta inventore qui blanditiis harum illum deserunt mollitia voluptates.
+        </div>
+        <div class="one-1 three">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate recusandae autem praesentium reprehenderit voluptate similique, vel itaque accusantium laboriosam rem unde mollitia molestias? Autem repellendus quasi harum, nihil quaerat odio.</div>
+    </div>
+</body>
+
+</html>
