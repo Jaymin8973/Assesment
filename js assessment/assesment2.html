@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assesment2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="assesment2.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <title>JS-Assessment-1</title>
+</head>
+
+<body>
+  <section>
+    <h1>Restaurant Booking Form</h1>
+    <form id="booking">
+      <div id="booking-box">
+        <div>
+          <label for="booking-type">Type of Booking:</label>
+        </div>
+        <div>
+          <select id="booking-type" onchange="showBookingOptions()">
+            <option value="" disabled selected>--Please select--</option>
+            <option value="full-day">Full Day Booking</option>
+            <option value="half-day">Half Day Booking</option>
+            <option value="hourly">Hourly Booking</option>
+          </select>
+        </div>
+      </div>
+      <div id="name-box">
+        <div> <label for="">Name :</label> </div>
+        <div><input type="text" id="username" placeholder="Enter Your Name" required> </div>
+      </div>
+      <div id="mobile-box">
+        <div> <label for="">Mobile :</label> </div>
+        <div><input type="tel" id="mobile" placeholder="Enter Your Mobile No" required> </div>
+      </div>
+      <div id="email-box">
+        <div><label for="">Email :</label> </div>
+        <div><input type="email" id="email" placeholder="Enter Your Email" required> </div>
+      </div>
+      <div id="person-box">
+        <div> <label for="">Number Of People :</label> </div>
+        <div> <input type="number" id="num-people" placeholder="People Count" required> </div>
+      </div>
+      <div id="booking-options"></div><br>
+     <button type="submit" >SUBMIT</button>
+    </form>
+  </section>
+  <script src="/JS-Assessment/JS-Assessment-1.js"></script>
+</body>
+
+</html>
